@@ -54,7 +54,7 @@ CONFIG.GROWX = false
 
 CONFIG.max_block_to_break = 160
 CONFIG.auto_wear_pickaxe = {
-    use_feature = true,
+    use_feature = false,
     storage_pickaxe = "DIDOSURG711",
     storage_pickaxe_id = EXTERN.id_door
 }
