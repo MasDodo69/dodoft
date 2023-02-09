@@ -1,0 +1,6 @@
+-- slot2
+farm = {"PESA1WAT","PESA2WAT","PESA3WAT","PESA4WAT","PESA5WAT","PESA6WAT","PESA7WAT","PESA8WAT"}
+
+lisensi = "dodolelah69"
+
+webhook_url = "https://discord.com/api/webhooks/1057997368315891752/KA20htK9GkWkC4mtMebCKvbB2EPZQb8wjsqPnLTuJS3IzADdmAsfFmjiXIkgOwRNVeGq"
