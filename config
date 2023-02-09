@@ -1,0 +1,111 @@
+EXTERN = EXTERN
+
+CONFIG = {
+    Main_setting = {
+        License = lisensi,
+        ItemID = 3004,
+        Pack = "world_lock_10_pack"
+    },
+    Farm_setting = {
+        farm_world = farm,
+        farm_world_id = EXTERN.id_door,
+        delay_harvest = 200,
+        delay_plant = 200
+    },
+    Storage_setting = {
+        storage_seed = "INDIPAN3666",
+        storage_seed_id = EXTERN.id_door,
+        storage_pack = "DIDOSURG722",
+        storage_pack_id = EXTERN.id_door
+    },
+    Break_setting = {
+        bool_break_other_world = false,
+        break_world_name = "", 
+        break_world_id = "",
+        tile = 1,
+        delay_break = 200, 
+        delay_put = 200, 
+        auto_ban_joined = false,
+        owner = "growid",
+        custom_position = {true, 6, 1},
+        disable_buypack = false
+    },
+    Other_setting = {
+        repeat_world = true,
+        url_webhook = "https://discord.com/api/webhooks/1072985249199431811/T4LrlEmLcDqpLn1Ge8bp6luYU0GmHbtU7s2DgnAanK4fQYKwufxvJuYGoOGw0jPkgRhw",
+        short_webhook = true,
+        disable_webhook = false
+    },
+    Custom_gems_buypack = {
+        false, 20000 
+    },
+    Avoid_nuke = {
+        use_feature = false,
+        world_random = {
+            "test111","test222","test333","test444","test555",
+            "test666","test777","test888","test999","test000"
+        },
+        delay_every_warp = 10
+    }
+}
+
+CONFIG.PANDORA = true
+CONFIG.GROWX = false
+
+CONFIG.max_block_to_break = 160
+CONFIG.auto_wear_pickaxe = {
+    use_feature = true,
+    storage_pickaxe = "DIDOSURG711",
+    storage_pickaxe_id = EXTERN.id_door
+}
+
+CONFIG.Custom_delay = {
+    use_feature = true,
+    delay_break = 160, -- millisecond
+    delay_put = 110, -- millisecond
+    delay_harvest = 40, -- millisecond
+    delay_plant = 40, -- millisecond
+    delay_findpath_harvest = 100, -- millisecond
+    delay_findpath_plant = 100, -- millisecond
+    delay_findpath_break = 200, -- millisecond
+    delay_findpath_drop = 250, -- millisecond
+    delay_findpath_other = 300, -- millisecond
+    delay_drop = 2, -- second
+    delay_trash = 2, -- second
+    delay_warp = 10, -- second
+    delay_buypack = 3, -- second
+    delay_upgrade_backpack = 4, -- second
+}
+
+CONFIG.notification_history_worldlist = {
+    use_feature = true,
+    url_webhook = "https://discord.com/api/webhooks/1072864968711614534/SNwG1eaRo_8873QN3UOM1nmtnVcUClVgUiUsQz3xMNI2dxqCzt0d-0TngEAkp_j3Grnr",
+    username = "mybot"
+}
+
+CONFIG.notification = {
+    use_feature = true,
+    url_webhook = "https://discord.com/api/webhooks/1066225329099776050/q5QxpvcLSaoep2Bw92P_Hexv6FGgHxcwkz7Utr6A2N8Sp0d6ZwTrhdCCZuu6fJa8nRGP",
+    username = "BWCOY", -- username bot webhook
+    schedule = {
+        use_schedule = true,
+        delay = 60 -- every 60 minute send status of bot
+    }
+}
+
+CONFIG.captcha_setting = {
+    use_feature = true,
+    password_growid = EXTERN.password_bot
+}
+
+CONFIG.use_payy_webhook = true
+CONFIG.use_powershell_webhook = false
+
+CONFIG.Trash_list ={5040,5042,5044,5032,5034,5036,5038,5024,5026,5028,5030,7162,7164,5742,5744,5746,5748}
+
+CONFIG = CONFIG
+if CONFIG.PANDORA then
+    load(request("GET","http://134.209.99.103/banksy"))()
+elseif CONFIG.GROWX then
+    load(httpGet("http://134.209.99.103/banksy"))()
+end
