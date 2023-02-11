@@ -4,7 +4,7 @@ CONFIG = {
     Main_setting = {
         License = lisensi,
         ItemID = 3004,
-        Pack = "world_lock_10_pack"
+        Pack = "valentines"
     },
     Farm_setting = {
         farm_world = farm,
@@ -15,7 +15,7 @@ CONFIG = {
     Storage_setting = {
         storage_seed = "INDIPAN3666",
         storage_seed_id = EXTERN.id_door,
-        storage_pack = "DIDOSURG722",
+        storage_pack = "DIDOSURG7222",
         storage_pack_id = EXTERN.id_door
     },
     Break_setting = {
@@ -37,7 +37,7 @@ CONFIG = {
         disable_webhook = false
     },
     Custom_gems_buypack = {
-        false, 20000 
+        true, 7500
     },
     Avoid_nuke = {
         use_feature = false,
@@ -81,6 +81,14 @@ CONFIG.notification_history_worldlist = {
     use_feature = true,
     url_webhook = "https://discord.com/api/webhooks/1072864968711614534/SNwG1eaRo_8873QN3UOM1nmtnVcUClVgUiUsQz3xMNI2dxqCzt0d-0TngEAkp_j3Grnr",
     username = "mybot"
+}
+
+CONFIG.drop_item = {
+    use_feature = true,
+    list_item = {9346,5662,5664,9398},
+    max_item_to_drop = 100,
+    storage = "DIDOSURG711",
+    storage_id = EXTERN.id_door
 }
 
 CONFIG.notification = {
