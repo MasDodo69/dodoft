@@ -1,0 +1,6 @@
+-- slot2
+farm = {"KOLOM1BIA","KOLOM2BIA","KOLOM3BIA","KOLOM4BIA","KOLOM5BIA","KOLOM6BIA","KOLOM7BIA","KOLOM8BIA","KOLOM9BIA","KOLOM10BIA"}
+
+lisensi = "dodolelah69"
+
+webhook_url = "https://discord.com/api/webhooks/1057997368315891752/KA20htK9GkWkC4mtMebCKvbB2EPZQb8wjsqPnLTuJS3IzADdmAsfFmjiXIkgOwRNVeGq"
